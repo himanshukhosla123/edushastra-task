@@ -1,0 +1,99 @@
+body{
+    padding: 0px;
+    margin: 0px;
+/*    background-color:antiquewhite;*/
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+.center{
+    text-align: center;
+}
+#questionsContainer{
+    background-color: white;
+}
+#testDate{
+    text-align:right;
+    background-color: yellow;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+#testName{
+    text-align: center;
+    padding: 20px;
+    background-color:darkorchid;
+    color:white;
+}
+
+.questionOption{
+    background-color:lightgrey;
+    margin:10px;
+    border-radius:150px;
+}
+.questionOption input{
+    margin-left:20px;
+    margin-right:10px;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+.questionOption label{
+   width: 85%;
+    padding:5px 0px; 
+    font-size: 16px;
+    font-weight:600;
+    text-transform:capitalize;
+}
+
+.questionDesc{
+ text-transform:capitalize;
+ margin:40px 10px 10px;
+    padding: 10px;
+    background-color:blue;
+    color: white;
+    border-radius:30px;
+    border:5px dotted white;
+}
+
+.submit_btn{
+    margin-top: 100px;
+margin-left:50px;
+    margin-bottom: 50px;
+}
+
+#qstnAttempt,.margin50{
+margin-left: 50px;    
+}
+
+#login_box{
+    width:350px;
+    height:500px;
+    border-radius: 10px;
+    box-shadow:2px 2px 15px 1px black;
+    text-align: center;
+    margin:40px auto;
+}
+#login_box table{
+    margin:50px auto;}
+#login_box table td{
+    text-align:left;}
+#login_box input{
+    height:30px;
+    margin:5px;
+    min-width:250px; 
+        
+}
+#login_box input[type=radio],#login_box input[type=checkbox]{
+    min-width:15px;
+    vertical-align: middle;
+}
+
+.sign_in{
+    display: none;
+}
+
+

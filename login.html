@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EdushastraTestEngineDemo</title>
+    <link rel="stylesheet" href="assests/css/bootstrapcss/bootstrap.min.css">
+    <link rel="stylesheet" href="assests/css/font-awesome.css">
+    <link rel="stylesheet" href="assests/css/main.css"> 
+    <link rel="stylesheet" href="assests/css/media_queries.css">
+<!--    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">-->
+    <script src="assests/js/jquery-3.2.1.min.js"></script>
+    <script src="assests/js/bootstrap.min.js"></script>
+    <script src="assests/js/main.js"></script>
+    <script src="assests/js/generator.js"></script>
+    
+</head>
+
+<body>
+</body>
+ <h1 class="center login_tile">Log In </h1>
+  <div id="login_box">
+
+      <div class="login_image"> 
+          <img src="assests/images/unknown_user.png" alt="user" class="img-Responsive">
+      </div>
+      <div class="login_details">
+         <table>
+             <tr>
+                 <td><label for="username">User Name:</label></td>
+                 <td><input type="text" id="username"></td>
+             </tr>
+             <tr>
+                 <td><label for="password">Password:</label></td>
+                 <td><input type="password" id="password"></td>
+             </tr>
+          </table>
+      </div>
+      <div class="sign_in">
+            <table>
+             <tr>
+                 <td><label for="firsrName">First Name:</label></td>
+                 <td><input type="text" id="firstName" placeholder="abc" required></td>
+             </tr>
+             <tr>
+                 <td><label for="lastName">Last Name:</label></td>
+                 <td><input type="text" id="lastName" placeholder="sharma" required></td>
+             </tr>
+             <tr>
+                 <td><label for="emailId">Email Id</label></td>
+                 <td><input type="email" placeholder="example123@email.com" required></td>
+             </tr>
+             <tr>
+                 <td><label for="sex">Sex</label></td>
+                 <td><input type="radio" id="male"><label for="male">Male</label>
+                 <input type="radio" id="female">
+                 <label for="" id="female">Female</label>
+                 </td>
+             </tr>
+             <tr>
+                 <td><label for="dob">Date Of Birth</label></td>
+                 <td><input type="date"></td>
+             </tr>
+             <tr>
+                 <td><label for="phnNo">Phone No.</label></td>
+                 <td><input type="tel" id="phnNo"></td>
+             </tr>
+             <tr>
+                 <td><label for="pwd">Password</label></td>
+                 <td><input type="password" id="pwd"required></td>
+             </tr>
+             <tr>
+                 <td><label for="conf-pwd">Confirm Password:</label></td>
+                 <td><input type="password" required id="conf-pwd"></td>
+             </tr>
+             <tr>
+                 <td class="center" colspan="2">
+                     <input type="checkbox" id="agreement" required>
+                     <label for="agreement">I Agree to Terms & Conditons</label>
+                 </td>
+             </tr>
+         </table> 
+      </div>
+      
+      <div class="login_buttons">
+          <button class="btn btn-info btn-lg login_btn" onclick="userLogin();">Log In</button>
+          <button class="btn btn-warning btn-lg margin50 signup_btn" onclick="userSignIn();">Sign In</button>
+      </div>
+  </div>
+</html>

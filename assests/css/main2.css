@@ -1,0 +1,167 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    margin-top:55px;
+}
+header{
+    position: fixed;
+    top: 0px;
+    width:100%;
+    margin:auto;
+    z-index: 2000;
+    background-color:darkslateblue;
+/*    border: 1px solid red; */
+    box-shadow:1px 0px 4px 2px grey; 
+}
+
+.main_header{
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+/*    margin-bottom:0px;*/
+}
+
+.dropdown:hover>.dropdown-menu{
+    display: block;
+}
+.logo{
+    flex:5;
+    display:inline-block;
+}
+.main_header form{
+    flex:12;
+    vertical-align: middle;
+    margin-top:20px;
+    display:inline-block;
+}
+
+.main_header ul{
+    flex:3;
+    margin-top: 20px;
+    vertical-align: middle;
+    display:inline-block;
+}
+.main_header input[type=text]{
+    width:80%;
+    display: inline-block;
+    margin-left:5%;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+
+.main_nav{
+    display:flex;
+    width:100%;
+    list-style:none;
+    padding: 0px;
+    background-color: #F8F8F8;
+    flex-direction:row;
+    border-radius:15px;
+    border-color: #e7e7e7;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom:5px;
+}
+.active{
+    background-color: #E7E7E7;
+}
+.main_nav li{
+    flex:1;
+    display:inline-block;
+    padding:10px;
+    font-size: 14px;
+    font-weight: 600;
+/*    background-color: lightgrey;*/
+    text-align: center;
+    margin: 0px 2px;
+}
+.main_nav li a{
+    text-decoration: none;
+    color: black;
+}
+.main_nav li:firstchild,.main_nav li:lastchild{
+    padding:10px 0px;
+}
+
+.center{
+    text-align: center;
+}
+
+.contact-form input,.contact-form textarea{
+    height: 40px;
+    border: 1px solid black;
+    margin: 10px;
+}
+.contact-form textarea{
+    height:150px;
+}
+
+.contact-heading{
+margin: 20px auto;    
+}
+
+.contact-2cols input{
+    width:47%;
+}
+.contact{
+    padding-bottom: 80px;
+}
+
+
+.subscribe-mail{
+    position: absolute;
+    top:-50px;
+    padding:20px 50px 40px;
+    width: 750px;
+    text-align: center;
+    left:270px;
+    background-color: white;
+    color: black;
+    border:5px solid black;
+}
+
+.subscribe-mail input[type=email]{
+    width:50%;
+    float:none;
+    display: inline-block;
+    height:30px;
+}
+
+
+.footer{
+    position: relative;
+    background-color:black;
+    padding:150px 0px 50px; 
+}
+
+.footer a,.footer{
+    color:#B2B2B2;
+}
+
+.red{background-color: red;}
+.contact-grids .fa{
+    color: blue;
+    vertical-align: middle;
+    font-size:20px;
+}
+
+.contact-grids h5{
+    font-size: 16px;
+    font-weight:700;
+/*    text-align: center;*/
+}
+    
+iframe{
+    width:100%;
+    height:3900px;
+    overflow:hidden;
+}    
+        
+    
+    
