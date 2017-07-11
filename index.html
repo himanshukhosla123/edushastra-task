@@ -5,208 +5,978 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>EdushastraTestEngineDemo</title>
-    <link rel="stylesheet" href="assests/css/bootstrapcss/bootstrap.min.css">
+    <link rel="stylesheet" href="assests/css/bootstrapcss/bootstrap.min.css" >
     <link rel="stylesheet" href="assests/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assests/css/main2.css"> 
-    <link rel="stylesheet" href="assests/css/media_queries.css">
-<!--    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">-->
+    <link rel="stylesheet" href="assests/css/typography.css">
+    <link rel="stylesheet" href="assests/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assests/css/main.css">
+    <link rel="stylesheet" href="assests/css/owl.carousel.min.css"> 
+<!--    <link rel="stylesheet" href="assests/css/media_queries.css">-->
     <script src="assests/js/jquery-3.2.1.min.js" defer></script>
     <script src="assests/js/bootstrap.min.js" defer></script>
-<!--    <script src="assests/js/main.js"></script>-->
-<!--    <script src="assests/js/generator.js"></script>-->
-
+    <script src="assests/js/owl.carousel.min.js" defer></script>
+    <script src="assests/js/main.js" defer></script>
 </head>
 
 <body>
-<header class="container-fluid">
-<div class="main_header">
-     <div class="logo">
-          <img src="assests/images/logo.png" class="img-responsive" alt="logo">
+
+<div class="container">
+   <div class="modal fade" id="SignInmyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
-      
-      <form class="">
-          <input type="text" class="form-control" placeholder="Search">
-        <button type="submit" class="btn btn-info">Submit</button>
-      </form>
-      <ul class="">
-          <buton class="btn btn-success" onclick="$(location)[0].href='login.html';userSignIn();">Log IN</buton>
-          <button class="btn btn-info" onclick="$(location)[0].href='login.html';">Sign Up</button>
-      </ul>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
- <nav class="">
-  <div class="container-fluid">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <ul class="main_nav">
-        <li><a href="#">Our Results</a></li>
-        <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GMAT Preparation</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">GMAT Preparation in Delhi NCR</a></li>
-            <li><a href="#">GMAT Preparation in Delhi NCR</a></li>
-            <li><a href="#">GMAT Preparation in Delhi NCR</a></li>
-            <li><a href="#">GMAT Preparation in Delhi NCR</a></li>
-            <li><a href="#">GMAT Preparation in Delhi NCR</a></li>
-            <li><a href="#">GMAT Preparation in Delhi NCR</a></li>
-            <li><a href="#">GMAT Preparation in Delhi NCR</a></li>
-            <li><a href="#">GMAT Preparation in Delhi NCR</a></li>
-          </ul>
-        </li>
 
-        <li><a href="#">GMCAT(GMAT+CAT)</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Free University</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Free GMAT & GMCAT course content</a></li>
-            <li><a href="#">Free GMAT & GMCAT course content</a></li>
-              <li><a href="#">Free GMAT & GMCAT course content</a></li>
-              <li><a href="#">Free GMAT & GMCAT course content</a></li>
-              <li><a href="#">Free GMAT & GMCAT course content</a></li>
-          </ul>
-        </li>
-        <li><a href="#"> Special Education</a></li>
-        <li><a href="">Moral Education</a></li>
-    </ul>
+   <div class="modal fade" id="LogInmyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        sign in
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+                    </div>
 </div>
-</nav>
+<header>
+    <div id="top_header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5" id="callUs">
+                <i class="fa fa-phone"></i>Call Us on 011 4701 0799
+                </div>
+                <div class="col-md-7">
+                    <ul class="nav navbar-nav" id="auth_form">
+                        <li id="register"><a type="button" data-toggle="modal" data-target="#SignInmyModal"><i class="fa fa-user"></i>Register</a>
+                        </li>
+                        <li id="signin" type="button" data-toggle="modal" data-target="#LogInmyModal"><a><i class="fa fa-sign-in"></i>Sign In</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav" id="nav_form">
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Giving</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main_header">
+        <div class="container">
+            <div class="logo col-md-3">
+                <img src="assests/images/logo.png" alt="Edushastra logo" class="img-responsive">
+            </div>
+            <nav id="main_nav">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our results</a></li>
+                    <li><a href="#">why us</a></li>
+                    <li><a href="#">GMAT</a></li>
+                    <li><a href="#">GMCAT</a></li>
+                    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Free University</a>
+                          <ul class="dropdown-menu">
+                            <li><a tabindex="-1" href="#">free GMAT & GMCAT live online classes</a></li>
+                            <li><a tabindex="-1" href="#">free GMAT & GMCAT live diagonisitic classes</a></li>
+                            <li><a tabindex="-1" href="#">free GMAT & GMCAT live course classes</a></li>
+                            <li><a tabindex="-1" href="#">free GMAT & GMCAT live video classes</a></li>
+                            <li><a tabindex="-1" href="#">free GMAT & GMCAT live live classes</a></li>
+                          </ul></li>
+                    <li class="btn-group">
+                       <a class="dropdown-toggle" data-toggle="dropdown">
+                        Education<span class="caret"></span>
+                      </a>
+                        <ul class="dropdown-menu">
+                            <li><a tabindex="-1" href="#">Special Education</a></li>
+                            <li><a tabindex="-1" href="#">Moral Eductaion</a></li>
+                          </ul>
+                        </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </header>
+<section id="slider">
+    <div id="owl-demo-main" class="owl-carousel owl-theme">
+        <div class="item">
+        <img src="assests/images/slider1.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="item">
+        <img src="assests/images/slider2.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="item">
+        <img src="assests/images/slider3.jpg" alt=""
+        class="img-responsive">
+        </div>
+    </div>
+</section>
 
-<!--
-<iframe src="https://www.edushastra.com/">
-  <p>Your browser does not support iframes.</p>
-</iframe>
--->
+<section id="courses">
+    <div class="container">
+    <div class="row">
+    <div class="courses_list col-md-8 col-xs-12">
+    <h2 class="border_below">COURSE CATEGORIES</h2>
+    <div class="row" id="courses">
+        <div class="col-xs-6">
+            <div class="row course_box">
+                <div class="course_icon col-xs-3">
+                    <i class="fa fa-line-chart green"></i>
+                </div>
+                <div class="col-xs-9">
+                    <h3>GMAT</h3>
+                    <p>Business Trends changing with latest courses are available with us.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="row course_box">
+                <div class="course_icon col-xs-3">
+                    <i class="fa fa-glass red"></i>
+                </div>
+                <div class="col-xs-9">
+                    <h3>GMCAT</h3>
+                    <p>Business Trends changing with latest courses are available with us.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row" id="courses">
+        <div class="col-xs-6">
+            <div class="row course_box">
+                <div class="course_icon col-xs-3">
+                    <i class="fa fa-line-chart light_green"></i>
+                </div>
+                <div class="col-xs-9">
+                    <h3>GMAT</h3>
+                    <p>Business Trends changing with latest courses are available with us.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="row course_box">
+                <div class="course_icon col-xs-3">
+                    <i class="fa fa-glass blue"></i>
+                </div>
+                <div class="col-xs-9">
+                    <h3>GMCAT</h3>
+                    <p>Business Trends changing with latest courses are available with us.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="row" id="courses">
+        <div class="col-xs-6">
+            <div class="row course_box">
+                <div class="course_icon col-xs-3">
+                    <i class="fa fa-line-chart yellow"></i>
+                </div>
+                <div class="col-xs-9">
+                    <h3>GMAT</h3>
+                    <p>Business Trends changing with latest courses are available with us.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="row course_box">
+                <div class="course_icon col-xs-3">
+                    <i class="fa fa-glass purple"></i>
+                </div>
+                <div class="col-xs-9">
+                    <h3>GMCAT</h3>
+                    <p>Business Trends changing with latest courses are available with us.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    
+    <div id="course_search" class="col-md-4 col-xs-12">
+            <h3>Course Categories</h3>
+        
+        <div class="col-xs-12">
+        <div class="row">    
+        <form>       
+                <input type="text" placeholder="Name:">
+                <input type="text" placeholder="Email:">
+                <select tabindex="0">
+                            <option value="1">Select 1</option>
+                            <option value="9">Select 2</option>
+                            <option value="2">Select 3</option>
+                            <option value="3">Select 4</option>
+                            <option value="6">Select 5</option>
+                            <option value="8">Select 6</option>
+                </select>
+                       
+                    <select tabindex="0">
+                            <option value="1">Select 1</option>
+                            <option value="9">Select 2</option>
+                            <option value="2">Select 3</option>
+                            <option value="3">Select 4</option>
+                            <option value="6">Select 5</option>
+                            <option value="8">Select 6</option>
+                        </select>
+                  <select tabindex="0">
+                            <option value="1">Select 1</option>
+                            <option value="9">Select 2</option>
+                            <option value="2">Select 3</option>
+                            <option value="3">Select 4</option>
+                            <option value="6">Select 5</option>
+                            <option value="8">Select 6</option>
+                        </select>
+                    <select class="basic" tabindex="0">
+                            <option value="1">Select 1</option>
+                            <option value="9">Select 2</option>
+                            <option value="2">Select 3</option>
+                            <option value="3">Select 4</option>
+                            <option value="6">Select 5</option>
+                            <option value="8">Select 6</option>
+                        </select>
+                
+                <input type="text" placeholder="Enter Your Keywords:">
+            <button>Search For Courses</button>
+        </form>
+      </div>
+    </div>
+</div>
+        </div>
+        </div>
+</section>
 
+<section id="welcome">
+  <div class="row">
+  <div class="welcome_image col-xs-6">
+  <img src="assests/images/bg-1.jpg" alt="university" class="img-responsive">
+  </div>
+  
+   <div class="col-xs-6">
+    <div class="col-md-12">
+        <div class="header">
+            <h3 class="border_below border_below_center_col6">Welcome To University of Education</h3> </div>
+    </div>
+    <div class="welcome_intro col-xs-4">
+        <div class="welcome_desc"> 
+           <span><i class="icon-earth132"></i></span>
+            <h6>BOOKS &amp; LIBRARY</h6>
+            <p>World Largest books and library center is here where you can study the latest trends of the education.</p>
+            <a href="#">view more</a> 
+        </div>
+        <figure> 
+           <img src="assests/images/intro-1.jpg" alt="" class="img-responsive">
+           <figcaption>
+           <a href="#">Learn Courses Online</a></figcaption>
+        </figure>
+    </div>
+    <div class="welcome_intro col-xs-4">
+        <div class="welcome_desc"> 
+           <span><i class="icon-educational18"></i></span>
+            <h6>Learn Courses Online</h6>
+            <p>World Largest books and library center is here where you can study the latest trends of the education.</p> <a href="#">view more</a> 
+        </div>
+        <figure> 
+           <img src="assests/images/intro-1.jpg" alt="" class="img-responsive">
+           <figcaption><a href="#">Learn Courses Online</a></figcaption>
+        </figure>
+    </div>
+    <div class="welcome_intro col-xs-4">
+        <div class="welcome_desc "> 
+           <span><i class="icon-teacher4"></i></span>
+            <h6>Become a Instructor</h6>
+            <p>World Largest books and library center is here where you can study the latest trends of the education.</p> <a href="#">view more</a> </div>
+        <figure> 
+           <img src="assests/images/intro-1.jpg" alt="" class="img-responsive">
+            <figcaption>
+            <a href="#">Learn Courses Online</a>
+            </figcaption>
+        </figure>
+    </div>
+</div>
+</div>
+</section>
+
+<section id="about_us"> </section>
+<section id="why_Us"></section>
+<section id="plans"><div class="container">
+    <div class="col-md-12 center">
+        <div class="plan_header">
+            <h3 class="border_below border_below_center">Plan and Pricing</h3> 
+        </div>
+    </div>
+    <div class="plans_list">
+        <div class="row">
+            <div class="col-md-4">
+
+                <div class="plan_desc center">
+                    <h4>Trial</h4>
+                    <div class="plan_price"><strong>Free</strong>
+                        <h3>30 Days</h3></div>
+                    <ul>
+                        <li><a href="#">300+ Audio Lesson mp3s</a></li>
+                        <li><a href="#">50 one-hour long CD's</a></li>
+                        <li><a href="#">This is the light version</a></li>
+                        <li><a href="#">This is the light version</a></li>
+                        <li><a href="#">50 one-hour long CD's</a></li>
+                    </ul>
+                    <hr>
+                    <button class="subscribe btn btn-warning">subscribe Now</button>
+                </div>
+                
+            </div>
+            <div class="col-md-4">
+                
+                <div class="plan_desc center">
+                    <h4>Silver</h4>
+                    <div class="plan_price"><strong><i class="fa fa-inr"></i>149</strong>
+                        <h3>30 Days</h3></div>
+                    <ul>
+                        <li><a href="#">300+ Audio Lesson mp3s</a></li>
+                        <li><a href="#">50 one-hour long CD's</a></li>
+                        <li><a href="#">This is the light version</a></li>
+                        <li><a href="#">This is the light version</a></li>
+                        <li><a href="#">50 one-hour long CD's</a></li>
+                    </ul>
+                    <hr>
+                    <button class="subscribe btn btn-warning">subscribe Now</button>
+                </div>
+               
+            </div>
+            <div class="col-md-4">
+               
+                <div class="plan_desc center">
+                    <h4>Gold</h4>
+                    <div class="plan_price"><strong><i class="fa fa-inr"></i>299</strong>
+                        <h3>30 Days</h3></div>
+                    <ul>
+                        <li><a href="#">300+ Audio Lesson mp3s</a></li>
+                        <li><a href="#">50 one-hour long CD's</a></li>
+                        <li><a href="#">This is the light version</a></li>
+                        <li><a href="#">This is the light version</a></li>
+                        <li><a href="#">50 one-hour long CD's</a></li>
+                    </ul>
+                    <hr>
+                    <button class="subscribe btn btn-warning">subscribe Now</button>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    
+</div>
+</section>
+
+
+<section id="our_course">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="header">
+                <h3 class="border_below">Our Course</h3> </div>
+        </div>
+        <div class="col-md-8">
+            <div class="our_course_tabs_header">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"> <a href="#all" aria-controls="all" role="tab" data-toggle="tab">All</a></li>
+                    <li role="presentation"><a href="#gmat" aria-controls="gmat" role="tab" data-toggle="tab">GMAT</a></li>
+                    <li role="presentation"><a href="#gmcat" aria-controls="gmcat" role="tab" data-toggle="tab">GMCAT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="our_course_tabs">
+            <div class="col-md-12">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="all">
+                        <div class="row margin-bottom">
+                            <div class="col-md-4">
+                                <div class="our_course_box">
+                                    <figure> 
+                                       <img src="assests/images/cur-wrap-2.jpg" alt="">
+                                        <figcaption><a href="#" class="btn-box">See More</a></figcaption>
+                                    </figure>
+                                    <div class="our_course_desc"> <span>$20</span>
+                                        <h5><a href="#">Real Estate Law </a></h5> <strong>
+                                                            <span>Dec 27, 2015</span>
+                                                            <small>Jan 27, 2016</small>
+                                                        </strong>
+                                        <p>If you want to build a successful business online, watch the promo video to see why 13,000+ students are using this online entrepreneurship course to learn.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="our_course_box">
+                                    <figure> <img src="assests/images/cur-wrap.jpg" alt="">
+                                        <figcaption><a href="#" class="btn-box">See More</a></figcaption>
+                                    </figure>
+                                    <div class="our_course_desc"> <span>$20</span>
+                                        <h5><a href="#">The Secrets of Economic</a></h5> <strong>
+                                                            <span>Dec 27, 2015</span>
+                                                            <small>Jan 27, 2016</small>
+                                                        </strong>
+                                        <p>Personal time management skills are essential for professional &amp; personal success in any area of life. Those able to successfully implement time management strategies</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="our_course_box">
+                                    <figure> <img src="assests/images/cur-wrap-3.jpg" alt="">
+                                        <figcaption><a href="#" class="btn-box">See More</a></figcaption>
+                                    </figure>
+                                    <div class="our_course_desc"> <span>$20</span>
+                                        <h5><a href="#">Networking Management </a></h5> <strong>
+                                                            <span>Dec 27, 2015</span>
+                                                            <small>Jan 27, 2016</small>
+                                                        </strong>
+                                        <p>Welcome to Logo Design fundamentals of building a great brand Logo. Our course teacher Lauren, walks you through his process of logo design.</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-all"> <a class="btn-3" href="#">View All Cources</a> </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="gmat">
+                        <div class="row margin-bottom">
+                            <div class="col-md-4">
+                                <div class="our_course_box">
+                                    <figure> <img src="assests/images/cur-wrap-2.jpg" alt="">
+                                        <figcaption><a href="#"  class="btn-box">See More</a></figcaption>
+                                    </figure>
+                                    <div class="our_course_desc"> <span>$20</span>
+                                        <h5><a href="#">Real Estate Law</a></h5> <strong>
+                                                            <span>Dec 27, 2015</span>
+                                                            <small>Jan 27, 2016</small>
+                                                        </strong>
+                                        <p>If you want to build a successful business online, watch the promo video to see why 13,000+ students are using this online entrepreneurship course to learn.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="our_course_box">
+                                    <figure> <img src="assests/images/cur-wrap-3.jpg" alt="">
+                                        <figcaption><a href="#" class="btn-box">See More</a></figcaption>
+                                    </figure>
+                                    <div class="our_course_desc"> <span>$20</span>
+                                        <h5><a href="#">Networking Management </a></h5> <strong>
+                                                            <span>Dec 27, 2015</span>
+                                                            <small>Jan 27, 2016</small>
+                                                        </strong>
+                                        <p>Welcome to Logo Design fundamentals of building a great brand Logo. Our course teacher Lauren, walks you through his process of logo design.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="our_course_box">
+                                    <figure> <img src="assests/images/cur-wrap.jpg" alt="">
+                                        <figcaption><a href="#" class="btn-box">See More</a></figcaption>
+                                    </figure>
+                                    <div class="our_course_desc"> <span>$20</span>
+                                        <h5><a href="#">The Secrets of Economic</a></h5> <strong>
+                                                            <span>Dec 27, 2015</span>
+                                                            <small>Jan 27, 2016</small>
+                                                        </strong>
+                                        <p>Personal time management skills are essential for professional &amp; personal success in any area of life. Those able to successfully implement time management strategies</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-all"> <a class="btn-3" href="#">View All Cources</a> </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="gmcat">
+                        <div class="row margin-bottom">
+                            <div class="col-md-4">
+                                <div class="our_course_box">
+                                    <figure> <img src="assests/images/cur-wrap.jpg" alt="">
+                                        <figcaption><a href="#">See More</a></figcaption>
+                                    </figure>
+                                    <div class="our_course_desc"> 
+                                       <span>$20</span>
+                                        <h5><a href="#">The Secrets of Economic </a></h5> <strong>
+                                                            <span>Dec 27, 2015</span>
+                                                            <small>Jan 27, 2016</small>
+                                                        </strong>
+                                        <p>Personal time management skills are essential for professional &amp; personal success in any area of life. Those able to successfully implement time management strategies</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="our_course_box">
+                                    <figure> 
+                                       <img src="assests/images/cur-wrap-2.jpg" alt="">
+                                        <figcaption><a href="#">See More</a></figcaption>
+                                    </figure>
+                                    <div class="our_course_desc"> <span>$20</span>
+                                        <h5><a href="#">Real Estate Law</a></h5> <strong>
+                                                            <span>Dec 27, 2015</span>
+                                                            <small>Jan 27, 2016</small>
+                                                        </strong>
+                                        <p>If you want to build a successful business online, watch the promo video to see why 13,000+ students are using this online entrepreneurship course to learn.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="our_course_box">
+                                    <figure> <img src="assests/images/cur-wrap-3.jpg" alt="">
+                                        <figcaption><a href="#">See More</a></figcaption>
+                                    </figure>
+                                    <div class="our_course_desc"> <span>$20</span>
+                                        <h5><a href="#">Networking Management </a></h5> <strong>
+                                                            <span>Dec 27, 2015</span>
+                                                            <small>Jan 27, 2016</small>
+                                                        </strong>
+                                        <p>Welcome to Logo Design fundamentals of building a great brand Logo. Our course teacher Lauren, walks you through his process of logo design.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-all"> <a class="btn-3" href="#">View All Cources</a> </div>
+                    </div>
+                   
+            </div>
+        </div>
+    </div>
+ </div>
+</div>
+</section>
+<section class="gallery-section">
+    <div class="col-md-12">
+        <div class="header center">
+            <h3 class="border_below border_below_center">Our Gallery</h3>
+            <p>Student gallery of the year past graduated passouts</p>
+        </div>
+    </div>
+   <div class="gallery">
+    <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="gallery_desc">
+                <figure> <img alt="" src="assests/images/home-gallery1.jpg">
+                    <figcaption>
+                        <a href="assests/images/home-gallery1.jpg"> <i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-link"></i></a>
+                        <h5>Lorem Ipsum Proin</h5>
+                        <p>Convocation</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="gallery_desc">
+                <figure> <img alt="" src="assests/images/home-gallery2.jpg">
+                    <figcaption>
+                        <a href="assests/images/home-gallery2.jpg"> <i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-link"></i></a>
+                        <h5>Lorem Ipsum Proin</h5>
+                        <p>Convocation</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="gallery_desc">
+                <figure> <img alt="" src="assests/images/home-gallery1.jpg">
+                    <figcaption>
+                        <a href="assests/images/home-gallery3.jpg"> <i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-link"></i></a>
+                        <h5>Lorem Ipsum Proin</h5>
+                        <p>Convocation</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="gallery_desc">
+                <figure> <img alt="" src="assests/images/home-gallery6.jpg">
+                    <figcaption>
+                        <a href="assests/images/home-gallery4.jpg"> <i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-link"></i></a>
+                        <h5>Lorem Ipsum Proin</h5>
+                        <p>Convocation</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="gallery_desc">
+                <figure> <img alt="" src="assests/images/home-gallery1.jpg">
+                    <figcaption>
+                        <a href="assests/images/home-gallery5.jpg"> <i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-link"></i></a>
+                        <h5>Lorem Ipsum Proin</h5>
+                        <p>Convocation</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="gallery_desc">
+                <figure> <img alt="" src="assests/images/home-gallery6.jpg">
+                    <figcaption>
+                        <a href="assests/images/home-gallery6.jpg"> <i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-link"></i></a>
+                        <h5>Lorem Ipsum Proin</h5>
+                        <p>Convocation</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="gallery_desc">
+                <figure> <img alt="" src="assests/images/home-gallery6.jpg">
+                    <figcaption>
+                        <a href="assests/images/home-gallery7.jpg"> <i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-link"></i></a>
+                        <h5>Lorem Ipsum Proin</h5>
+                        <p>Convocation</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="gallery_desc">
+                <figure> <img alt="" src="assests/images/home-gallery1.jpg">
+                    <figcaption> <a href="assests/images/home-gallery3.jpg"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-link"></i></a>
+                        <h5>Lorem Ipsum Proin</h5>
+                        <p>Convocation</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="loadmore"> 
+    <a href="#" class="btn-3">Load More</a> 
+    </div>
+</section>
+
+<section class="counter_box">
+   <div class="container">
+   <div class="row">
+    <div class="col-xs-3"> 
+       <span><i class="icon-group2"></i></span>
+        <h3 class="counter">94,532</h3>
+        <h5>FOREIGN FOLLOWERS</h5> 
+    </div>
+    <div class="col-xs-3"> 
+       <span><i class="icon-book236"></i></span>
+        <h3 class="counter">11,223</h3>
+        <h5>CLASSES COMPLETE</h5> 
+    </div>
+    <div class="col-xs-3"> 
+       <span><i class="icon-win5"></i></span>
+        <h3 class="counter">282,673</h3>
+        <h5>STUDENTS ENROLLED</h5> 
+    </div>
+    <div class="col-xs-3"> <span><i class=" icon-user255"></i></span>
+        <h3 class="counter">370</h3>
+        <h5>CERTIFIED TEACHERS</h5> 
+    </div>
+</div>
+</div>
+</section>
+<section style="display:none;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="kf_edu2_heading1">
+                    <h3>Faculty member</h3> </div>
+            </div>
+            <div class="edu2_faculty_wrap">
+                <div id="owl-demo-8" class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="edu2_faculty_des">
+                                        <figure><img src="assests/images/faculty-mb1.jpg" alt="">
+                                            <figcaption> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> </figcaption>
+                                        </figure>
+                                        <div class="edu2_faculty_des2">
+                                            <h6><a href="#">Danny Awesome</a></h6> <strong>Manager</strong>
+                                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="item">
+                                    <div class="edu2_faculty_des">
+                                        <figure><img src="assests/images/faculty-mb2.jpg" alt="">
+                                            <figcaption> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> </figcaption>
+                                        </figure>
+                                        <div class="edu2_faculty_des2">
+                                            <h6><a href="#">Kimberly Richiez</a></h6> <strong>Russian Teacher</strong>
+                                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        <div class="item">
+                                    <div class="edu2_faculty_des">
+                                        <figure><img src="assests/images/faculty-mb3.jpg" alt="">
+                                            <figcaption> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> </figcaption>
+                                        </figure>
+                                        <div class="edu2_faculty_des2">
+                                            <h6><a href="#">Dylan Taylor</a></h6> <strong>English Teacher</strong>
+                                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        <div class="item">
+                                    <div class="edu2_faculty_des">
+                                        <figure><img src="assests/images/faculty-mb4.jpg" alt="">
+                                            <figcaption> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> </figcaption>
+                                        </figure>
+                                        <div class="edu2_faculty_des2">
+                                            <h6><a href="#">Simon Grishaber</a></h6> <strong>Health Teacher</strong>
+                                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        <div class="item">
+                 <div class="edu2_faculty_des">
+                                        <figure><img src="assests/images/faculty-mb1.jpg" alt="">
+                                            <figcaption> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> </figcaption>
+                                        </figure>
+                                        <div class="edu2_faculty_des2">
+                                            <h6><a href="#">Simon Grishaber</a></h6> <strong>Health Teacher</strong>
+                                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+</section>
+<section class="news_events">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="header">
+                <h3>Latest News &amp; Event</h3> </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="edu2_new_des">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="edu2_event_des">
+                                <h4>Dec</h4>
+                                <p>Lorem Lipsum Proin Gravide Nibh Vel Velit</p>
+                                <ul class="post-option">
+                                    <li>By<a href="#">Admin</a></li>
+                                    <li>03/12/2015</li>
+                                    <li><a href="#">21 Comments</a></li>
+                                </ul> <a href="#" class="readmore">read more<i class="fa fa-long-arrow-right"></i></a> <span>24</span> </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 thumb">
+                            <figure><img src="assests/images/news2.jpg" alt="">
+                                <figcaption><a href="blog-detail.html"><i class="fa fa-plus"></i></a></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="edu2_new_des">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 thumb">
+                            <figure><img src="assests/images/news2.jpg" alt="">
+                                <figcaption><a href="blog-detail.html"><i class="fa fa-plus"></i></a></figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="edu2_event_des text-right">
+                                <h4>Dec</h4>
+                                <p>Lorem Lipsum Proin Gravide Nibh Vel Velit</p>
+                                <ul class="post-option">
+                                    <li>By<a href="#">Admin</a></li>
+                                    <li>03/12/2015</li>
+                                    <li><a href="#">21 Comments</a></li>
+                                </ul> <a href="#" class="readmore">read more<i class="fa fa-long-arrow-right"></i></a> <span>03</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="edu2_new_des">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="edu2_event_des">
+                                <h4>Dec</h4>
+                                <p>Lorem Lipsum Proin Gravide Nibh Vel Velit</p>
+                                <ul class="post-option">
+                                    <li>By<a href="#">Admin</a></li>
+                                    <li>03/12/2015</li>
+                                    <li><a href="#">21 Comments</a></li>
+                                </ul> <a href="#" class="readmore">read more<i class="fa fa-long-arrow-right"></i></a> <span>31</span> </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 thumb">
+                            <figure><img src="assests/images/news2.jpg" alt="">
+                                <figcaption><a href="blog-detail.html"><i class="fa fa-plus"></i></a></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="edu2_new_des">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 thumb">
+                            <figure><img src="assests/images/news2.jpg" alt="">
+                                <figcaption><a href="blog-detail.html"><i class="fa fa-plus"></i></a></figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="edu2_event_des text-right">
+                                <h4>Dec</h4>
+                                <p>Lorem Lipsum Proin Gravide Nibh Vel Velit</p>
+                                <ul class="post-option">
+                                    <li>By<a href="#">Admin</a></li>
+                                    <li>03/12/2015</li>
+                                    <li><a href="#">21 Comments</a></li>
+                                </ul> <a href="#" class="readmore">read more<i class="fa fa-long-arrow-right"></i></a> <span>11</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="tarining">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="kf_edu2_training_des">
+                    <figure> <img src="assests/images/training-thumb.png" alt=""> </figure>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="edu2_training_wrap">
+                    <h2>Get The Coaching Training</h2>
+                    <h3>By Simon Jones almost Free</h3>
+      
+                    <ul class="countdown">
+                        <li> <span class="days">195</span>
+                            <p class="days_ref">days</p>
+                        </li>
+                        <li> <span class="hours">20</span>
+                            <p class="hours_ref">hours</p>
+                        </li>
+                        <li> <span class="minutes">34</span>
+                            <p class="minutes_ref">minutes</p>
+                        </li>
+                        <li> <span class="seconds last">17</span>
+                            <p class="seconds_ref">seconds</p>
+                        </li>
+                    </ul>
+                    <strong>It’s limited Seating! Hurry up</strong> <a href="#" class="btn-1">REGISTER NOW</a> </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <footer>
-    <div class="contact clearfix" id="contact">
+  <div id="subscribe_mail">
    <div class="container">
-    <div class="contact-heading">
-        <h3 class="center">Get In Touch</h3>
-    </div>
-    <div class="contact-grids row">
-        <div class="col-md-4 contact-left">
-            <div class="row">
-                <div class="col-md-1"> <i class="fa fa-map-marker" aria-hidden="true"></i> </div>
-                <div class="col-md-11">
-                    <h5>Address</h5>
-                    <p>Eiusmod Tempor inc
-                        <br> <span>1St Golden Place,</span> Los Angeles 1256 </p>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-            <div class="row">
-                <div class="col-md-1"> <i class="fa fa-phone-square" aria-hidden="true"></i> </div>
-                <div class="col-md-11">
-                    <h5>Mobile</h5>
-                    <ul>
-                        <li>+91 9891418695</li>
-                        <li>+91 5544886622</li>
-                    </ul>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-            <div class="row">
-                <div class="col-md-1"> 
-                <i class="fa fa-envelope" aria-hidden="true"></i> </div>
-                <div class="col-md-11">
-                    <h5>E-Mail</h5>
-                    <ul>
-                        <li><a href="mailto:example@mail.com">mail@example.com</a></li>
-                        <li><a href="mailto:example@mail.com">example@mail.com</a></li>
-                    </ul>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
+    <div class="row">
+        <div class="col-md-6 col-xs-12">
+            <h5 class="white">SUBSCRIBE WEEKLY NEWSLETTER</h5>
         </div>
-        <div class="col-md-8 contact-form">
-            <form action="#" method="post">
-               <div class="row contact-2cols">
-                <input type="text" class="" name="Name" placeholder="Name" required="">
-                <input type="email" class="email right" name="Email" placeholder="Email" required="">
-                </div>
-                <div class="row">
-                <input type="text" class="phone col-md-12" name="phone" placeholder="Phone Number" required="">
-                </div>
-                <div class="row">
-                <textarea placeholder="Message"  class="col-md-12" name="Message" required=""></textarea>
-                </div>
-                <input type="submit" class="btn btn-warning red" value="SUBMIT"> </form>
+        <div class="col-md-6 col-xs-12 mail_box">
+            <input type="email" placeholder="Enter valid email address">
+            <button>
+                <i class="fa fa-paper-plane"></i>
+                Submit
+            </button>
+        </div>
         </div>
     </div>
-</div>
-	</div>
-
-	<div class="footer">
+    </div>
+<div id="contact">
     <div class="container">
-        <div class="subscribe-mail">
-            <form action="#" method="post">
-                <h3>Send us Your Mail, we'll make sure You Never Miss a Thing!</h3>
-                <input type="email" name="email" size="30" required="" class="form-control" placeholder="Enter your email here...">
-                <input type="submit"  class="btn btn-info"
-                 value="Subscribe"> 
-            </form>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="widget widget-links">
+                <h5>Information</h5>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Our Stories</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Our History</a></li>
+                    <li><a href="#">Sprcialist Info</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-main">
-            <div class="footer-top">
-                <div class="col-md-4">
-                    <h3><a href="#"><span>B</span>rilliance</a></h3>
-                    <p>Office Number: 806, 9th Floor, West End Mall,
-Janakpuri District Center, New Delhi-110058.
-T: +91-11-47010799, +91-11-47082205.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Our Address</h3>
-                    <div class="ftr-address row">
-                        <div class="local col-md-1"> <i class="fa fa-map-marker" aria-hidden="true"></i> </div>
-                        <div class="ftr-text col-md-11">
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="ftr-address row">
-                        <div class="local col-md-1"> <i class="fa fa-phone" aria-hidden="true"></i> </div>
-                        <div class="ftr-text col-md-11">
-                            <p>+91 9818478695</p>
-                        </div>
-                    </div>
-                    <div class="ftr-address row">
-                        <div class="local col-md-1"> <i class="fa fa-envelope" aria-hidden="true"></i> </div>
-                        <div class="ftr-text col-md-11">
-                            <p><a href="mailto:info@example.com">info@example.com</a></p>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h3>Keep In Touch With Us</h3>
-                    <div class="row">
-                            <div class="row">
-                                <div class="col-md-1"><a href="#"><i class="fa fa-facebook"></i></a></div>
-                            Facebook
-                            </div>
-                            <div class="row">
-                            <div class="col-md-1">
-                                <a href="#"><i class="fa fa-twitter"></i></a></div>Twitter
-                            </div>
-                            <div class="row">
-                            <div class="col-md-1">
-                                <a href="#"><i class="fa fa-google-plus"></i></a></div>Google
-                        </div>
-<!--                    </div>-->
-                </div>
-                </div>
+        <div class="col-md-4">
+            <div class="widget widget-links">
+                <h5>Student Help</h5>
+                <ul>
+                    <li><a href="#">My Info</a></li>
+                    <li><a href="#">My Questions</a></li>
+                    <li><a href="#">F.A.Q</a></li>
+                    <li><a href="#">Serch Courses</a></li>
+                    <li><a href="#">Latest Informations</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="widget widget-contact">
+                <h5>Contact</h5>
+                <ul>
+                    <li>PO Box UN152468, 1 Street North, New Towm, California, USA</li>
+                    <li>Phone : <a href="#"> 5 (012) 4565 789</a></li>
+                    <li>Fax : <a href="#"> 5 (012) 4565 789</a></li>
+                    <li>Email : <a href="#"> Info@info.com</a></li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
-
+</div>
 </footer>
+
+   
+
+
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
